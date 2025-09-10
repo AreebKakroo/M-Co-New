@@ -1,0 +1,9 @@
+// Highlight active navigation link
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+});
